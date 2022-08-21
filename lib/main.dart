@@ -21,32 +21,34 @@ class pageone extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Stack(
-      children: const [
+      children: [
         Positioned(
           child: Image(
-              width: 375,
-              height: 550,
+              width: 400,
+              height: 570,
               fit: BoxFit.fill,
               image: NetworkImage(
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9JZe7Xf6wWbRwO4ytvzeDloX3N2dYkSUFQ&usqp=CAU")),
+                  "https://th.bing.com/th/id/OIP.64XD_JZUTTXukRgBSY81xAHaE8?w=266&h=180&c=7&r=0&o=5&pid=1.7")),
         ),
         Positioned(
-            top: 200,
-            right: 60,
-            child: Icon(
-              Icons.food_bank_outlined,
-              size: 100,
-            )),
-        Positioned(
-            top: 330,
-            right: 12,
+            top: 480,
+            right: 66,
             child: Text(
-              " eat اهلا وسهلا بكم في تطبيق  ",
+              "  covid 19 اهلا وسهلا بكم في تطبيق  ",
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                   color: Colors.black),
+            )),
+        Positioned(
+            top: 520,
+            right: 150,
+            child: MaterialButton(
+              onPressed: () {},
+              child: Text("next"),
+              color: Colors.blue,
+              elevation: 8,
             )),
       ],
     ));
